@@ -5,9 +5,10 @@
     },
     "children": [
       "menu-item#sale",
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#jeans",
+      "menu-item#vestuario",
+      "menu-item#nueva",
+      "menu-item#puntadasdelibertad"
     ]
   },
   "menu-item#sale": {
@@ -22,6 +23,21 @@
         "noFollow": false,
         "tagTitle": "Sale",
         "text": "Sale"
+      }
+    }
+  },
+  "menu-item#jeans": {
+    "props": {
+      "id": "menu-item-jeans",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/jeans/",
+        "noFollow": false,
+        "tagTitle": "jeans",
+        "text": "Jeans"
       }
     }
   },
@@ -117,6 +133,231 @@
       }
     }
   },
+
+  "menu-item#vestuario": {
+    "props": {
+      "id": "menu-item-custom-vestuario",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "onMountBehavior":"open",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "vestuario",
+        "text": "Vestuario"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#vestuario"]
+  },
+  "vtex.menu@2.x:submenu#vestuario": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-vestuario"]
+  },
+  "flex-layout.row#menu-vestuario": {
+    "children": ["flex-layout.col#menu-vestuario-1", "flex-layout.col#menu-vestuario-2"]
+  },
+
+  "flex-layout.col#menu-vestuario-1": {
+    "children": ["vtex.menu@2.x:menu#vestuario"]
+  },
+  "flex-layout.col#menu-vestuario-2": {
+    "children": ["info-card#home"]
+  },
+  "vtex.menu@2.x:menu#vestuario": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#overoles",
+      "menu-item#vestidos",
+      "menu-item#shorts",
+      "menu-item#faldas",
+      "menu-item#conjuntos",
+      "menu-item#enterizos",
+      "menu-item#chaquetas",
+      "menu-item#blusas"]
+  },
+  "menu-item#overoles": {
+    "props": {
+      "id": "menu-item-overoles",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/overoles",
+        "noFollow": true,
+        "tagTitle": "overoles",
+        "text": "Overoles"
+      }
+    }
+  },
+  "menu-item#vestidos": {
+    "props": {
+      "id": "menu-item-vestidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vestidos",
+        "noFollow": true,
+        "tagTitle": "vestidos",
+        "text": "Vestidos"
+      }
+    }
+  },
+  "menu-item#shorts": {
+    "props": {
+      "id": "menu-item-shorts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shorts",
+        "noFollow": true,
+        "tagTitle": "shorts",
+        "text": "Shorts"
+      }
+    }
+  },
+  "menu-item#faldas": {
+    "props": {
+      "id": "menu-item-faldas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faldas",
+        "noFollow": true,
+        "tagTitle": "faldas",
+        "text": "Faldas"
+      }
+    }
+  },
+  "menu-item#conjuntos": {
+    "props": {
+      "id": "menu-item-conjuntos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/conjuntos",
+        "noFollow": true,
+        "tagTitle": "conjuntos",
+        "text": "Conjuntos"
+      }
+    }
+  },
+  "menu-item#enterizos": {
+    "props": {
+      "id": "menu-item-enterizos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/enterizos",
+        "noFollow": true,
+        "tagTitle": "enterizos",
+        "text": "Enterizos"
+      }
+    }
+  },
+  "menu-item#chaquetas": {
+    "props": {
+      "id": "menu-item-chaquetas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "chaquetas",
+        "href": "/chaquetas",
+        "noFollow": true,
+        "tagTitle": "chaquetas",
+        "text": "Chaquetas"
+      }
+    }
+  },
+  "menu-item#blusas": {
+    "props": {
+      "id": "menu-item-blusas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blusas",
+        "noFollow": true,
+        "tagTitle": "blusas",
+        "text": "Blusas"
+      }
+    }
+  },
+
+
+
+  "menu-item#plus-size": {
+    "props": {
+      "id": "menu-item-plus-size",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/plus-size/",
+        "noFollow": false,
+        "tagTitle": "plus-size",
+        "text": "Plus Size"
+      }
+    }
+  },
+
+  "menu-item#nueva": {
+    "props": {
+      "id": "menu-item-nueva",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nueva/",
+        "noFollow": false,
+        "tagTitle": "nueva",
+        "text": "Nueva"
+      }
+    }
+  },
+  "menu-item#puntadasdelibertad": {
+    "props": {
+      "id": "menu-item-puntadasdelibertad",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/puntadasdelibertad",
+        "noFollow": true,
+        "tagTitle": "puntadasdelibertad",
+        "text": "Puntadas de Libertad"
+      }
+    }
+  },
+
+
+
+
+
+
+
+
   "menu-item#more": {
     "props": {
       "id": "menu-item-custom-sale",
@@ -133,6 +374,7 @@
     },
     "blocks": ["vtex.menu@2.x:submenu#more"]
   },
+
   "vtex.menu@2.x:submenu#more": {
     "props": {
       "width": "100%"
@@ -152,8 +394,9 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": ["menu-item#about-us", "menu-item#faq"]
+    "children": ["menu-item#about-us", "menu-item#faq","menu-item#contact-us"]
   },
+
   "menu-item#about-us": {
     "props": {
       "id": "menu-item-about-us",
