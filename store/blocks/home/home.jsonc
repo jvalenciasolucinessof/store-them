@@ -4,16 +4,19 @@
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
+      // "flex-layout.row#deals",
       "__fold__",
-      "rich-text#shelf-title",
+      "rich-text#title_sale",
       "flex-layout.row#shelf",
-      "info-card#home",
+      "rich-text#title_lookinspitador",
+      "flex-layout.row#banner_lookinspitador",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
     ]
   },
+
+  // "info-card#home",
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -43,7 +46,7 @@
   "slider-layout#demo-images": {
     "props": {
       "itemsPerPage": {
-        "desktop": 1,
+        "desktop": 2,
         "tablet": 1,
         "phone": 1
       },
@@ -53,9 +56,10 @@
     }
   },
 
-  "rich-text#shelf-title": {
+ 
+  "rich-text#title_sale": {
     "props": {
-      "text": "## Summer",
+      "text": "## Sale",
       "blockClass": "shelfTitle"
     }
   },
@@ -82,14 +86,40 @@
     }
   },
 
+  "rich-text#title_lookinspitador":{
+    "props": {
+      "text": "## Tu Look Inspirador",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#banner_lookinspitador": {
+    "children": [
+      "image#banner_look1",
+      "image#banner_look2"
+    ]
+  },
+
+  "image#banner_look1": {
+    "props": {
+      "src": "https://fotos.asisea.com.co/homeasisea/BLACKFRIDAY2.jpg",
+      "maxHeight": 570
+    }
+  },
+  "image#banner_look2": {
+    "props": {
+      "src": "https://fotos.asisea.com.co/homeasisea/BLACKFRIDAY1.jpg",
+      "maxHeight": 570
+    }
+  },
+
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "imageUrl": "https://fotos.asisea.com.co/homeasisea/BLACKFRIDAY4.jpg",
+      "headline": "Tu Look Inspirador",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"

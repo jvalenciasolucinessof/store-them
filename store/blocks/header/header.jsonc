@@ -65,7 +65,6 @@
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-
       "login",
       "minicart.v2"
     ]
@@ -79,6 +78,7 @@
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
+      
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
@@ -115,7 +115,6 @@
   "drawer": {
     "children": ["menu#drawer"]
   },
-
   "menu#drawer": {
     "children": [
       "menu-item#category-apparel",
@@ -136,4 +135,7 @@
       "height": "27.5"
     }
   }
+
+
+
 }

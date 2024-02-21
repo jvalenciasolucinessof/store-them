@@ -14,7 +14,7 @@
 }
 
 .newsletter {
-  background-color: #03054e;
+  background-color: #000000;
   max-width: 1528px;
   margin: 0 auto;
 }
@@ -32,6 +32,7 @@
   padding-bottom: 4px;
   display: flex;
   color: #fff;
+  border: none;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
@@ -112,6 +113,12 @@
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* .autoCompleteOuterContainer{
+.autoCompleteOuterContainer{
   border-bottom: 1px solid black ;
-} */
+  background-color: transparent;
+
+}
+
+
+
+
