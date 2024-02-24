@@ -3,6 +3,7 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
+      "add-to-list-btn",
       "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",

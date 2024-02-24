@@ -66,6 +66,7 @@
       "flex-layout.col#spacer",
       "search-bar",
       "login",
+      "add-to-list-btn",
       "minicart.v2"
     ]
   },

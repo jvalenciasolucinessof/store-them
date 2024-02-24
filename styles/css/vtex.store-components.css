@@ -119,6 +119,13 @@
 
 }
 
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border:none;
+  background-color: transparent;
+}
+
+
+
 
 
 
