@@ -71,14 +71,14 @@
     padding: 140px;
   }
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
   }
-  .infoCardContainer--info-card-home .infoCardImageContainer {
+  /* .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
-  }
+  } */
   .imageElement--storePrint {
     margin-bottom: 0px;
     max-height: 600px;
@@ -113,19 +113,12 @@
   image-rendering: -webkit-optimize-contrast;
 }
 
-.autoCompleteOuterContainer{
-  border-bottom: 1px solid black ;
+.autoCompleteOuterContainer {
+  border-bottom: 1px solid black;
   background-color: transparent;
-
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
-  border:none;
+  border: none;
   background-color: transparent;
 }
-
-
-
-
-
-

@@ -1,9 +1,9 @@
 {
   "product-summary.shelf": {
     "children": [
+      "add-to-list-btn",
       "stack-layout#prodsum",
       "product-summary-name",
-      "add-to-list-btn",
       "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
@@ -30,8 +30,9 @@
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
-      "aspectRatio": "1:1",
-      "maxHeight": 300
+      "showCollections": false,
+      "width": "360px",
+      "height": "530px"
     }
   },
 
@@ -82,9 +83,7 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
+      "markers": ["discount"],
       "blockClass": "summary"
     }
   }

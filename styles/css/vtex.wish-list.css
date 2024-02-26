@@ -1,0 +1,6 @@
+.wishlistIconContainer {
+  right: 11px;
+  top: 5px;
+  position: absolute;
+  z-index: 1000;
+}

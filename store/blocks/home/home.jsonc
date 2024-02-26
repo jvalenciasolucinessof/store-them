@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "list-context.image-list#carousel",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       // "flex-layout.row#deals",
@@ -10,16 +10,14 @@
       "flex-layout.row#shelf",
       "rich-text#title_lookinspitador",
       "flex-layout.row#banner_lookinspitador",
-      "rich-text#question",
-      "rich-text#link",
       "newsletter"
     ]
   },
 
   // "info-card#home",
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "list-context.image-list#carousel": {
+    "children": ["slider-layout#carousel-images"],
     "props": {
       "height": 570,
       "preload": true,
@@ -43,7 +41,7 @@
       ]
     }
   },
-  "slider-layout#demo-images": {
+  "slider-layout#carousel-images": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -56,24 +54,24 @@
     }
   },
 
- 
   "rich-text#title_sale": {
     "props": {
-      "text": "## Sale",
+      "text": "## DESCUBRE LA NUEVA COLLECÓN",
       "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["list-context.product-list#carousel-products"]
   },
-  "list-context.product-list#demo1": {
+  "list-context.product-list#carousel-products": {
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "children": ["slider-layout#carousel-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "139"
     }
   },
-  "slider-layout#demo-products": {
+  "slider-layout#carousel-products": {
     "props": {
       "itemsPerPage": {
         "desktop": 4,
@@ -86,7 +84,7 @@
     }
   },
 
-  "rich-text#title_lookinspitador":{
+  "rich-text#title_lookinspitador": {
     "props": {
       "text": "## Tu Look Inspirador",
       "blockClass": "shelfTitle"
@@ -94,10 +92,7 @@
   },
 
   "flex-layout.row#banner_lookinspitador": {
-    "children": [
-      "image#banner_look1",
-      "image#banner_look2"
-    ]
+    "children": ["image#banner_look1", "image#banner_look2"]
   },
 
   "image#banner_look1": {
@@ -123,20 +118,6 @@
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
-    }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }
