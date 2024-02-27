@@ -96,3 +96,12 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRowContent--priceHome{
+  color: #ffffff;
+  font-size: 14px;
+  top:-5000px
+}
+.flexCol--productRating{
+  margin-bottom: 0%;
+}

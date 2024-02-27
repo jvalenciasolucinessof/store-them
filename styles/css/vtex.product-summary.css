@@ -46,3 +46,8 @@
 .image {
   border-radius: 0.25rem;
 }
+
+.element{
+  padding: 0%;
+  justify-content: space-between;
+}

@@ -77,3 +77,9 @@
   color: #ffffff;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
+
+.currencyInteger--summary{
+  font-weight: bold;
+  /* top: -30px */
+}
+
