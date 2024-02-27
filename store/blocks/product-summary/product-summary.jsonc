@@ -45,15 +45,8 @@
   "product-highlight-wrapper": {
     "props": {
       "blockClass": "collection"
-    },
-    "children": ["product-highlight-text"]
-  },
-  "product-highlight-text": {
-    "props": {
-      "message": "{highlightName}"
     }
   },
-
   "product-list-price#summary": {
     "props": {
       "blockClass": "summary"
@@ -78,7 +71,8 @@
   },
   "product-selling-price#summary": {
     "props": {
-      "blockClass": "summary"
+      "blockClass": "summary",
+      "message": "{sellingPriceWithTax}"
     }
   },
   "product-price-savings#summary": {

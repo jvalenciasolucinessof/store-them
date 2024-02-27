@@ -4,3 +4,7 @@
   position: absolute;
   z-index: 1000;
 }
+
+.wishlistIconContainer:hover {
+  pointer-events: none;
+}
