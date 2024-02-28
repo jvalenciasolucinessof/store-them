@@ -1,10 +1,18 @@
-.wishlistIconContainer {
-  right: 11px;
-  top: 5px;
-  position: absolute;
-  z-index: 1000;
-}
 
-.wishlistIconContainer:hover {
-  pointer-events: none;
+.wishlistIconContainer--summary {
+    right: 15px;
+    top: 5px;
+    position: absolute;
+    z-index: 1000;
+  }
+.wishlistIcon--summary:hover{
+    background-color: transparent !important;
+} 
+
+.wishlistIcon--summary{
+    background-color:  transparent !important;
+}
+.iconSize{
+    width: 15px;
+    height: 15px;
 }

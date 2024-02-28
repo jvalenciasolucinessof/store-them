@@ -62,9 +62,9 @@
   margin-bottom: 20px;
 }
 
-.skuSelectorContainer {
+/* .skuSelectorContainer {
   margin: 1rem 0;
-}
+} */
 
 @media only screen and (min-width: 640px) {
   .newsletter .container {
@@ -121,4 +121,7 @@
 .searchBarContainer :global(.vtex-input-prefix__group) {
   border: none;
   background-color: transparent;
+}
+.skuSelectorSubcontainer--talla{
+  display: none; 
 }

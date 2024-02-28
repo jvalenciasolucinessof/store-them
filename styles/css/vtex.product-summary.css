@@ -51,3 +51,8 @@
   padding: 0%;
   justify-content: space-between;
 }
+
+.imageContainer :hover{
+  /* width: 50px; */
+  opacity: 0.5;
+}

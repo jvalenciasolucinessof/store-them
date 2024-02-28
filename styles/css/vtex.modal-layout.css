@@ -56,11 +56,13 @@
   border-top-style: solid;
   border-top-color: #aaa;
   padding-top: 1.5rem;
+  display:none;
 }
 
 .contentContainer--quickviewContent {
   padding: 2.5rem 0 2.5rem 2rem;
   overflow-x: hidden;
+  display:none;
 }
 
 .triggerContainer--quickview {
