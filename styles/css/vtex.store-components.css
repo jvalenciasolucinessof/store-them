@@ -123,5 +123,21 @@
   background-color: transparent;
 }
 .skuSelectorSubcontainer--talla{
-  display: none; 
+  bottom: 270px;
+  position: relative;
+  z-index: 100;
+  /* display: none;  */
+}
+.skuSelectorInternalBox{
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  justify-content: center;
+}
+.skuSelectorItemTextValue{
+  font-size: 15px;
+  color:black;
+  /* justify-content: center;
+  align-items: center;
+  right: 10px; */
 }
