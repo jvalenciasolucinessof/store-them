@@ -70,12 +70,15 @@
   .newsletter .container {
     padding: 140px;
   }
+
   .label {
     font-size: 40px;
   }
+
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
   }
+
   /* .infoCardContainer--info-card-home .infoCardImageContainer {
     width: 70%;
   } */
@@ -122,22 +125,45 @@
   border: none;
   background-color: transparent;
 }
-.skuSelectorSubcontainer--talla{
+/* 
+.skuSelectorSubcontainer--talla {
   bottom: 270px;
   position: relative;
   z-index: 100;
-  /* display: none;  */
+  display: ruby-text;
+} */
+.skuSelectorSubcontainer--talla {
+  background: hsla(0, 0%, 100%, .8);
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  bottom: 230px;
+  display: ruby-text;
+
 }
-.skuSelectorInternalBox{
-  width: 30px;
-  height: 30px;
+
+.skuSelectorSubcontainer--talla .skuSelectorInternalBox {
+  width: 25px;
+  height: 25px;
   background-color: #fff;
   justify-content: center;
 }
-.skuSelectorItemTextValue{
+
+.skuSelectorSubcontainer--talla .skuSelectorItemTextValue {
   font-size: 15px;
-  color:black;
-  /* justify-content: center;
+  color: black;
+}
+
+.valueWrapper {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
   align-items: center;
-  right: 10px; */
+  justify-content: center;
+}
+
+.skuSelectorSubcontainer--color .skuSelectorInternalBox {
+  border: 1px solid rgba(0, 0, 0, .25);
 }
